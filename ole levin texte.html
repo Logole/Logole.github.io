@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .text-center {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Neue Regel: Vertikale Anordnung */
+      height: 100vh;
+    }
+
+    .button {
+      background-color: #000000;
+      border: none;
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+      margin-bottom: 20px; /* Neue Regel: Abstand zwischen den Buttons */
+    }
+
+    .button:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      pointer-events: none;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-10px);
+    }
+
+    .button:hover:before {
+      transform: translateY(0);
+    }
+
+    .button span {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="Ole-Levin-Hefe-teig-Text.html" class="button"><span>Text über Pizzateig und das Kochen</span></a>
+    <a href="Pizza-Zutaten.html" class="button"><span>Pizza Zutaten</span></a>
+    <a href="Pizza.html" class="button"><span>Pizza</span></a>
+  </div>
+</body>
+</html>

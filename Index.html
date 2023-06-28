@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <title>Kueche</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7; /* Angenehme Hintergrundfarbe */
+      margin: 0;
+      padding: 0;
+    }
+    .text-center {
+      text-align: center; 
+    }
+    .text-underspace {
+      line-height: 2;  
+    }
+    .image-row img {
+        width: 20%;
+        margin: 0 15px; 
+        border-radius: 10px;
+    }
+    .image-row {
+        display: flex;
+        justify-content: center; 
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .button {
+      background-color: #000000;
+      border: none;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+      margin: 20px;
+    }
+
+    .button:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      pointer-events: none;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-10px);
+    }
+
+    .button:hover:before {
+      transform: translateY(0);
+    }
+
+    .button span {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-center">Website von der Küchengruppe</h1>
+   <div class="button-container">
+      <a href="Pizza.html" class="text-center button"><span>Woche 1 Pizza mit Gourmetkoch</span></a>
+      <div class="image-row">
+         <img src="Dateien\Pizza Ole Levin3.jpg">
+         <img src="Dateien\KoljaJonisPizza(1).JPG">
+         <img src="Dateien\Mia und Ari.jpg">
+      </div>
+      <div class="text-underspace">
+         <a href="Tacos.html" class="text-center button"><span>Woche 2 Tacos mit Gourmetkoch</span></a>
+      </div>
+   </div>
+</body>
+</html>
